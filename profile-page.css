@@ -1,0 +1,86 @@
+ body{
+            min-height: 100vh;   /*centered content*/
+            height: 100%;
+            background-color: #141414;
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            text-align: center;
+        }
+        .who{
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+        }
+        .profile-grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pic{
+            display: flex;
+            flex-wrap: wrap;          /*for mobile*/
+            justify-content: center;
+            gap: 12px;
+        }
+        .username{
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(171, 169, 169);
+            font-size: 14px;
+        }
+        .profile-grid:hover .username{    /*for text to become white at the same time*/
+            color: white;
+        }
+        .user{
+            width: 82px;
+            border-radius: 6px;
+        }
+        .profile-grid:hover .user{
+            border: 2px solid white;
+            transform: scale(1.05);      /*zoom*/
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .manage-profiles{
+            background-color: #141414;
+            color: rgb(171, 169, 169);
+            border: 1px solid rgb(171, 169, 169);
+            padding: 6px 20px;
+            cursor: pointer;
+            letter-spacing: 1.7px;
+        }
+        .manage-profiles:hover{
+            color: white;
+            border: 1px solid white;
+        }
+        @media(min-width:1000px){
+            .who{
+                font-size: 44.52px;
+                margin-bottom: 30px;
+                letter-spacing: 1px;
+
+            }
+            .user{
+                width: 125px;
+            }
+            .pic{
+                column-gap: 25px;
+            }
+            .manage-profiles{
+                padding: 8px 20px;        
+                font-size: 16px;         
+                letter-spacing: 2px;    
+                margin-top: 20px;   
+            }
+        }
